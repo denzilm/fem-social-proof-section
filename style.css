@@ -1,0 +1,139 @@
+:root {
+  --clr-primary-100: hsl(300, 43%, 22%);
+  --clr-primary-200: hsl(333, 80%, 67%);
+
+  --clr-neutral-100: hsl(303, 10%, 53%);
+  --clr-neutral-200: hsl(300, 24%, 96%);
+  --clr-neutral-300: hsl(0, 0%, 100%);
+
+  --font-family: "League Spartan", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: var(--clr-neutral-300);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+}
+
+.social {
+  width: 90%;
+  padding-block: 5rem;
+}
+
+.social__text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.social__header {
+  font-weight: 700;
+  font-size: 3rem;
+  padding-inline: 5rem;
+  color: var(--clr-primary-100);
+}
+
+.social__paragraph {
+  color: var(--clr-neutral-100);
+  line-height: 1.2;
+  padding-inline: 3rem;
+}
+
+.social__ratings {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.social__rating {
+  background-color: var(--clr-neutral-200);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-primary-100);
+  font-weight: 700;
+}
+
+.social__rating-icons {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social__rating-text {
+  margin-block-start: 1rem;
+}
+
+.social__testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: var(--clr-neutral-200);
+}
+
+.social__testimonial {
+  padding: 2rem;
+  background-color: var(--clr-primary-100);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.social__testimonial-header {
+  display: flex;
+  gap: 2rem;
+}
+
+.social__testimonial-header img {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.social__testimonial-header p {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.social__testimonial-header span:last-of-type {
+  color: hsla(333, 80%, 67%, 0.8);
+  font-size: 1.2rem;
+}
